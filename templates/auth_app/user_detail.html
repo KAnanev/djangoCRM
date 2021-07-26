@@ -1,0 +1,5 @@
+{% extends 'base.html' %}
+{% block content %}
+    <p>{{ object.username }}</p>
+    <a href="https://www.t.me/recon_test_bot?start={{ object.user_token }}" target="_blank"><button>Включить Telegram оповещение</button></a>
+{% endblock %}

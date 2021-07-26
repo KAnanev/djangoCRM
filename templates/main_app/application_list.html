@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Заявки</h2>
+<ul>
+    {% for object in object_list %}
+        <h3><a href="{{ object.get_absolute_url }}">Заявка №{{ object.pk }}</a></h3>
+        <p>Название: {{ object.title }}</p>
+        <p>Статус: {{ object.get_status_display }}</p>
+        <p>Создана: {{ object.created_at }}</p>
+        <p>Последнее изменение: {{ object.updated_at }}</p>
+    {% endfor %}
+</ul>
+{% endblock %}

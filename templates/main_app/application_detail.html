@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h3>Заявка №{{ object.pk }}</h3>
+    <p>Название: {{ object.title }}</p>
+    <p>Описание: {{ object.text }}</p>
+    <p>Статус: {{ object.get_status_display }}</p>
+    <p>Создана: {{ object.created_at }}</p>
+    <p>Последнее изменение: {{ object.updated_at }}</p>
+{% endblock %}
