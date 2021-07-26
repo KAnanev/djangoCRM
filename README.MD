@@ -38,8 +38,11 @@ python manage.py loaddata db.json
 python manage.py runserver
 ```
 ## Демо данные
+
 Суперпользователь: логин: 'superuser' пароль: 'superuser'
+
 Тестовый пользователь: логин: 'test_user' пароль: 'user_test'
+
 Тестовый сотрудник: логин: 'staff_user' пароль: 'user_staff'
 
 ## Краткая документация
