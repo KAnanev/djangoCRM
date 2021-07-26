@@ -34,7 +34,7 @@ CRM использует:
 cd djangoCRM
 python -m pip install -r requirements.txt
 python manage.py migrate
-python manage.py loaddata
+python manage.py loaddata db.json
 python manage.py runserver
 ```
 ## Демо данные
