@@ -15,7 +15,7 @@ def migrate_notify_post(instance, created, **kwargs):
     if created or instance.old_status != instance.status:
         telegram_id = User.objects.filter(username=instance.client)[0].telegram_id
         if telegram_id:
-            bot_token = bot_token
+          bot_token = ''
             url = f'https://api.telegram.org/bot{bot_token}/sendmessage'
             params = {
                 'chat_id': telegram_id,
