@@ -1,7 +1,9 @@
 # CRM Django
-## Мини CRM (тестовое задание)
+## Мини CRM 
 
 CRM для регистрации и обработки входящих заявок от пользователей.
+
+Бот для нотификации http://github.com/KAnanev/aiogram_token
 
 ## Реализован следующий функционал:
 
@@ -32,12 +34,15 @@ CRM использует:
 cd djangoCRM
 python -m pip install -r requirements.txt
 python manage.py migrate
-python manage.py loaddata
+python manage.py loaddata db.json
 python manage.py runserver
 ```
 ## Демо данные
+
 Суперпользователь: логин: 'superuser' пароль: 'superuser'
+
 Тестовый пользователь: логин: 'test_user' пароль: 'user_test'
+
 Тестовый сотрудник: логин: 'staff_user' пароль: 'user_staff'
 
 ## Краткая документация
